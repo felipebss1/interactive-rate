@@ -16,16 +16,18 @@
         appreciated to help us improve our offering!
       </p>
     </div>
-    <div class="flex place-content-between">
-      <li
-        tabindex="0"
-        v-for="(rate, index) in storeRate.rateValue"
-        :key="index"
-        @click="selectedRate(rate)"
-        class="flex items-center justify-center rounded-full w-10 h-10 list-none bg-[#252d37] text-[#7c8798] hover:bg-[#fb7413] hover:text-white focus:bg-[#959eac] focus:text-white cursor-pointer"
-      >
-        {{ rate }}
-      </li>
+    <div>
+      <ul class="flex place-content-between">
+        <li
+          tabindex="0"
+          v-for="(rate, index) in storeRate.rateValue"
+          :key="index"
+          @click="selectedRate(rate)"
+          class="flex items-center justify-center rounded-full w-10 h-10 list-none bg-[#252d37] text-[#7c8798] hover:bg-[#fb7413] hover:text-white focus:bg-[#959eac] focus:text-white cursor-pointer"
+        >
+          {{ rate }}
+        </li>
+      </ul>
     </div>
     <div
       class="flex justify-center rounded-full bg-[#fb7413] my-7 text-sm hover:bg-white hover:text-[#fb7413] cursor-pointer"
